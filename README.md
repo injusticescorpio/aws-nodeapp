@@ -1,2 +1,2 @@
 # aws-nodeapp
-A simple node app for learning deployment in aws.
+A simple node app for learning deployment in AWS.
