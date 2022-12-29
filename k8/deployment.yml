@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,11 +16,11 @@ spec:
         app: nodeapp
     spec:
       containers:
-      - name: nodeserver
-        image: arjunscorpio/nodeapp:latest
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 4000
+        - name: nodeserver
+          image: arjunscorpio2000/node-aws-app:v1
+          resources:
+            limits:
+              memory: 128Mi
+              cpu: 500m
+          ports:
+            - containerPort: 3000
